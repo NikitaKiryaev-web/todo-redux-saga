@@ -2,10 +2,10 @@
   "name": "todo-redux-thunk",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://nikitakiryaev-web.github.io/todo-redux-thunk/",
+  "homepage": "https://nikitakiryaev-web.github.io/todo-redux-saga/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/NikitaKiryaev-web/todo-redux-thunk"
+    "url": "https://github.com/NikitaKiryaev-web/todo-redux-saga"
   },
   "dependencies": {
     "@redux-devtools/extension": "^3.2.2",
