@@ -1,0 +1,2 @@
+export const CHANGE_INPUT_VALUE = 'CHANGE_INPUT_VALUE';
+export const SET_INPUT_ERROR = 'SET_INPUT_ERROR';

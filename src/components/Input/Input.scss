@@ -1,0 +1,80 @@
+.todo-add {
+    max-width: 250px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto 15px;
+    &__input {
+        flex-grow: 1;
+        height: 32px;
+        box-sizing: border-box;
+        border-radius: 5px 0 0 5px;
+        border: 1px solid rgba(177, 177, 177, 0.4);
+        border-right: none;
+        background-color: #DBE2EF;
+        padding: 10px;
+        font-family: "Ubuntu", sans-serif;
+        font-size: 12px;
+        line-height: 14px;
+        color: #112D4E;
+        &:placeholder {
+            font-size: 12px;
+            line-height: 14px;
+            color: #7B7B7B;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__btn {
+        width: 45px;
+        height: 32px;
+        background-image: url(../../images/plus.svg);
+        background-size: 24px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        padding: 0px;
+        border: 0;
+        background-color: #3F72AF;
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+        &-api {
+            width: 200px;
+            height: 40px;
+            background-color: #3F72AF;
+            border: none;
+            margin: 0 auto 15px;
+            border-radius: 5px;
+            display: block;
+            cursor: pointer;
+            padding: 0;
+            color: #fff;
+            &:hover {
+                transform: scale(1.1);
+                transition: .3s;
+            }
+        }
+        &:hover {
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+    &__divider {
+        width: 83%;
+        margin: 0 auto 15px;
+        height: 1px;
+        background-color: rgba(0, 0, 0, 0.5);
+        border: none;
+    }
+    &__error {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 15px;
+        line-height: 22px;
+        color: rgba(225, 7, 7, 0.909);
+        font-weight: 400;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+    }
+}

@@ -1,0 +1,66 @@
+.todo-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 auto;
+    border-radius: 5px;
+    background-color: #DBE2EF;
+    padding: 15px 10px;
+    margin: 0;
+    &__checkbox-label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        input {
+            height: 0;
+            width: 0;
+            opacity: 0;
+            cursor: pointer;
+            position: absolute;
+        }
+    }
+    &__checkmark {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: 20px;
+        width: 20px;
+        border: 2px solid #3F72AF;
+        border-radius: 5px;
+    }
+    &__checkbox-label input:checked ~ &__checkmark {
+        background-color: #3F72AF;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/27/White_check.svg");
+        background-size: 15px;
+        background-position: center center;
+        background-repeat: no-repeat;
+    }
+    &__text {
+        font-family: "Ubuntu", sans-serif;
+        color: #000;
+        font-size: 15px;
+        line-height: 22px;
+        margin: 0 0 0 40px;
+        &_line-through {
+            text-decoration: line-through;
+        }
+
+    }
+    &__delete {
+        width: 20px;
+        height: 20px;
+        background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/OOjs_UI_icon_trash.svg/1200px-OOjs_UI_icon_trash.svg.png");
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        margin-left: auto;
+        border: none;
+        &:hover {
+            transform: scale(1.1);
+            transition: .3s;
+        }
+    }
+    }
